@@ -13,3 +13,8 @@
 .channel-section-title{
     margin-bottom: 0;
 }
+.recommended-channel-category{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
