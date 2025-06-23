@@ -21,3 +21,28 @@
 .channel-author{
     margin-right: auto;
 }
+
+.recommended-video-card{
+    max-width: 550px;
+    min-width: 400px;
+    width: 34%;
+}
+.recommended-video-card img{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+.recommended-video-time{
+    top: 65%;
+}
+.channel-title-meta{
+    margin-left: auto;
+}
+.video-info{
+    width: 100%;
+}
+.video-meta{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
