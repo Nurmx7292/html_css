@@ -42,7 +42,19 @@
     width: 100%;
 }
 .video-meta{
-    width: 90%;
+    white-space: nowrap;
+    width: 95%;
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width:900px){
+    .feed-channel,.recommended-videos,.channel-videos-info{
+        display: none;
+    }
+}
+@media (max-width:520px){
+    .video-time{
+        top: 65%;
+    }
 }
