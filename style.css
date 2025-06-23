@@ -303,6 +303,14 @@ main {
     flex: 1;
     min-width: 0;
 }
+.channel-videos-info{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.channel-videos-info{
+    margin-right: 100px;
+}
 .channel-section-title {
     margin-bottom: 30px;
     color: #fff;
@@ -399,7 +407,8 @@ main {
     .sidebar,
     .featured-video,
     .channel-recommend,
-    .channel-section-title {
+    .channel-section-title,
+    .videos-controls {
         display: none;
     }
 
