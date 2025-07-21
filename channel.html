@@ -1,222 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube</title>
-    <link rel="stylesheet" href="channel.css">
-</head>
-<body>
+    <link rel="stylesheet" href="channel.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="mobile-header">
+      <div class="mobile-logo-wrapper">
         <a href="#" class="mobile-header-logo">
-            <img src="assets/Logo_mobile.svg" alt="YouTube Logo">
+          <img src="assets/Logo_mobile.svg" alt="YouTube Logo" />
         </a>
         <h1 class="mobile-header-title">Margaret Phelps</h1>
-        <div class="mobile-header-actions">
-            <button aria-label="Search"><img src="assets/search.svg" alt="Search"></button>
-            <button aria-label="More options"><img src="assets/more.svg" alt="More"></button>
-        </div>
+      </div>
+      <div class="mobile-header-actions mobile-channe-mha">
+        <button aria-label="Search">
+          <img src="assets/icons/search (1).svg" alt="Search" />
+        </button>
+        <button aria-label="More options">
+          <img src="assets/icons/Combined Shape (2).svg" alt="More" />
+        </button>
+      </div>
     </header>
-    <div class="wrapper">
-        <header class="header">
-            <div class="logo">
-                <button>
-                    <img src="assets/Menu.svg">
-                </button>
-                <a href="/">
-                    <img src="assets/Logo_mobile.svg" alt="YouTube Logo">
-                    <img src="assets/youtubeLogo.svg" alt="YouTube Logo Text">
-                </a>
-            </div>
-            <form action="#" class="search-bar">
-                <input type="text" name="search" id="search" placeholder="Search" aria-label="Search query">
-                <button class="search" aria-label="Search"><img src="assets/search.svg" alt="#"></button>
-            </form>
-            <div class="header-actions">
-                <button><img src="assets/video.svg"></button>
-                <button><img src="assets/more.svg"></button>
-                <button><img src="assets/notification.svg"></button>
-                <img class="profile-pic" src="https://picsum.photos/40/40" alt="Profile image">
-            </div>
-        </header>
-        <div class="main-wrapper">
-            <aside class="sidebar">
-                <section>
-                    <nav class="sidebar-nav">
-                        <ul class="sidebar-primary-nav sidebar-nav-list">
-                            <li class="nav-element active-nav-element"><img src="assets/home.svg" alt=""><a href="#">Home</a></li>
-                            <li class="nav-element"><img src="assets/trends.svg" alt=""><a href="#">Trending</a></li>
-                            <li class="nav-element"><img src="assets/subscriptions.svg" alt=""><a href="#">Subscriptions</a></li>
-                        </ul>
-                        <ul class="sidebar-main-nav sidebar-nav-list">
-                            <li class="nav-element"><img src="assets/folder.svg" alt=""><a href="#">Library</a></li>
-                            <li class="nav-element"><img src="assets/history.svg" alt=""><a href="#">History</a></li>
-                            <li class="nav-element"><img src="assets/watchLater.svg" alt=""><a href="#">Watch later</a></li>
-                            <li class="nav-element"><img src="assets//star.svg" alt=""><a href="#">Favourites</a></li>
-                            <li class="nav-element"><img src="assets/heart.svg" alt=""><a href="#">Liked videos</a></li>
-                            <li class="nav-element"><img src="assets/music.svg" alt=""><a href="#">Music</a></li>
-                            <li class="nav-element"><img src="assets/game.svg" alt=""><a href="#">Games</a></li>
-                        </ul>
-                        <button class="dropdown-button">
-                            <img src="assets/chevron-down.svg">    
-                            Show more
-                        </button>
-                    </nav>
-                </section>
-                <section class="subscriptions-section">
-                    <h2>
-                        Subscriptions
-                    </h2>
-                    <ul class="subscriptions-list">
-                        <li class="subscriptions-element"><img src="https://picsum.photos/40/40" alt="account picture"><a href="#">Gussie Singleton</a></li>
-                        <li class="subscriptions-element"><img src="https://picsum.photos/40/40" alt="account picture"><a href="#">Lorem, ipsum</a></li>
-                        <li class="subscriptions-element"><img src="https://picsum.photos/40/40" alt="account picture"><a href="#">Lorem, ipsum</a></li>
-                        <li class="subscriptions-element"><img src="https://picsum.photos/40/40" alt="account picture"><a href="#">Nora Francis</a></li>
-                        <li class="subscriptions-element"><img src="https://picsum.photos/40/40" alt="account picture"><a href="#">Lorem, ipsum</a></li>
-                        <li class="subscriptions-element"><img src="https://picsum.photos/40/40" alt="account picture"><a href="#">Emma Hanson</a></li>
-                    </ul>
-                </section>
-                <button class="setting subscriptions-element">
-                    <img src="assets/settings.svg">
-                    <div>Settings</div>
-                </button>
-            </aside>
-            <main>
-                <section class="channel-cover">
-                    <img src="assets/Cover.png" alt="Channel cover">
-                </section>
-                <header class="channel-header-row">
-                    <div class="channel-profile">
-                        <img class="channel-avatar" src="https://picsum.photos/80/80" alt="Avatar">
-                        <div class="channel-info">
-                            <h1 class="channel-name">Margaret Phelps</h1>
-                            <div class="channel-subs">245K subscribed</div>
-                        </div>
-                    </div>
-                    <button class="channel-subscribe-btn">Subscribe 2.3m</button>
-                </header>
-                <div class="channel-content-row">
-                    <div class="channel-content-main">
-                        <nav class="channel-tabs" aria-label="Channel navigation">
-                            <ul>
-                                <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Videos</a></li>
-                                <li><a href="#">Playlists</a></li>
-                                <li><a href="#">Channels</a></li>
-                                <li><a href="#">Discussion</a></li>
-                                <li><a href="#">About</a></li>
-                            </ul>
-                            <button class="channel-search-btn" aria-label="Search"><img src="assets/search.svg" alt="Search"></button>
-                        </nav>
-                        <article class="featured-video">
-                            <div class="thumb-wrapper">
-                                <img class="featured-thumb" src="https://placehold.co/540x250/3B82F6/fff" alt="Featured">
-                                <div class="featured-time">7:36</div>
-                            </div>
-                            <div class="featured-info">
-                                <h2 class="featured-title">Choosing Best Audio Player Software For Your Computer</h2>
-                                <p class="featured-desc">Your cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups.</p>
-                                <div class="featured-meta">11k views • 6 months ago</div>
-                            </div>
-                        </article>
-                    </div>
-                    <aside class="channel-recommend">
-                        <h2 class="recommend-title">Recommended channel</h2>
-                        <ul class="recommend-list">
-                            <li class="recommend-item">
-                                <img src="https://picsum.photos/50/50?1" alt="Flora Benson">
-                                <span class="recommend-name">Flora Benson</span>
-                            </li>
-                            <li class="recommend-item">
-                                <img src="https://picsum.photos/50/50?2" alt="Violet Cobb">
-                                <span class="recommend-name">Violet Cobb</span>
-                            </li>
-                            <li class="recommend-item">
-                                <img src="https://picsum.photos/50/50?3" alt="Phillip Mullins">
-                                <span class="recommend-name">Phillip Mullins</span>
-                            </li>
-                        </ul>
-                    </aside>
-                </div>
-                <section class="channel-main-content">
-                    <div class="channel-videos-info">
-                        <h2 class="channel-section-title">Margaret Phelps videos</h2>
-                        <div class="videos-controls">
-                            <img src="assets/Left.svg" alt="#">
-                            <img src="assets/Right.svg" alt="#">
-                        </div>
-                    </div>
-                    <ul class="channel-videos">
-                        <li class="channel-video-card">
-                            <img src="https://placehold.co/250x150/F9A8D4/31343C" alt="Astronomy Or Astrology">
-                            <div class="video-time">7:36</div>
-                            <div class="video-info">
-                                <div class="video-title">Astronomy Or Astrology</div>
-                                <div class="video-meta">240k views • 4 months ago • Food & Drink</div>
-                            </div>
-                        </li>
-                        <li class="channel-video-card">
-                            <img src="https://placehold.co/250x150/A5B4FC/31343C" alt="Advertising Outdoors">
-                            <div class="video-time">2:19</div>
-                            <div class="video-info">
-                                <div class="video-title">Advertising Outdoors</div>
-                                <div class="video-meta">13k views • 15 days ago • Food & Drink</div>
-                            </div>
-                        </li>
-                        <li class="channel-video-card">
-                            <img src="https://placehold.co/250x150/6EE7B7/31343C" alt="Radio Astronomy">
-                            <div class="video-time">9:05</div>
-                            <div class="video-info">
-                                <div class="video-title">Radio Astronomy</div>
-                                <div class="video-meta">14k views • 11 months ago • Food & Drink</div>
-                            </div>
-                        </li>
-                        <li class="channel-video-card">
-                            <img src="https://placehold.co/250x150/FECACA/31343C" alt="A Good Autosorponder">
-                            <div class="video-time">3:14</div>
-                            <div class="video-info">
-                                <div class="video-title">A Good Autosorponder</div>
-                                <div class="video-meta">12k views • 2 months ago • Food & Drink</div>
-                            </div>
-                        </li>
-                        <li class="channel-video-card">
-                            <img src="https://placehold.co/250x150/FDE68A/31343C" alt="Baby Monitor Technology">
-                            <div class="video-time">1:55</div>
-                            <div class="video-info">
-                                <div class="video-title">Baby Monitor Technology</div>
-                                <div class="video-meta">88k views • 7 days ago • Food & Drink</div>
-                            </div>
-                        </li>
-                        <li class="channel-video-card">
-                            <img src="https://placehold.co/250x150/818CF8/31343C" alt="Asteroids">
-                            <div class="video-time">8:16</div>
-                            <div class="video-info">
-                                <div class="video-title">Asteroids</div>
-                                <div class="video-meta">123k views • 4 months ago • Food & Drink</div>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-                <nav class="mobile-nav">
-                    <a href="#" class="mobile-nav-item active">
-                        <img src="assets/home.svg" alt="Home">
-                        <span>Home</span>
-                    </a>
-                    <a href="#" class="mobile-nav-item">
-                        <img src="assets/trends.svg" alt="Trending">
-                        <span>Trending</span>
-                    </a>
-                    <a href="#" class="mobile-nav-item">
-                        <img src="assets/subscriptions.svg" alt="Subscriptions">
-                        <span>Subscriptions</span>
-                    </a>
-                    <a href="#" class="mobile-nav-item">
-                        <img src="assets/folder.svg" alt="Library">
-                        <span>Library</span>
-                    </a>
-                </nav>
-            </main>
+    <div class="wrapper channel-wrapper">
+      <header class="header">
+        <div class="logo">
+          <button>
+            <img src="assets/Menu.svg" />
+          </button>
+          <a href="/">
+            <img src="assets/Logo_mobile.svg" alt="YouTube Logo" />
+            <img src="assets/youtubeLogo.svg" alt="YouTube Logo Text" />
+          </a>
         </div>
+        <form action="#" class="search-bar">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search"
+            aria-label="Search query"
+          />
+          <button class="search" aria-label="Search">
+            <img src="assets/icons/search (1).svg" alt="#" />
+          </button>
+        </form>
+        <div class="header-actions">
+          <button><img src="assets/icons/video.svg" /></button>
+          <button><img src="assets/icons/more.svg" /></button>
+          <button>
+            <div class="notifications-count">3</div>
+            <img src="assets/icons/notification.svg" />
+          </button>
+          <img
+            class="profile-pic"
+            src="./assets/Userpic.png"
+            alt="Profile image"
+          />
+        </div>
+      </header>
+      <div class="main-wrapper">
+        <aside class="sidebar channel-sidebar">
+          <section>
+            <nav class="sidebar-nav">
+              <ul class="sidebar-primary-nav sidebar-nav-list">
+                <li class="nav-element active-nav-element">
+                  <img src="assets/icons/home.svg" alt="" /><a href="#">Home</a>
+                </li>
+                <li class="nav-element">
+                  <img src="assets/icons/fire.svg" alt="" /><a href="#"
+                    >Trending</a
+                  >
+                </li>
+                <li class="nav-element">
+                  <img src="assets/icons/tabs.svg" alt="" /><a href="#"
+                    >Subscriptions</a
+                  >
+                </li>
+              </ul>
+              <ul class="sidebar-nav-list sidebar-main-nav">
+                <li class="nav-element">
+                  <img src="assets/icons/folder.svg" alt="" /><a href="#"
+                    >Library</a
+                  >
+                </li>
+                <li class="nav-element">
+                  <img src="assets/icons/history.svg" alt="" /><a href="#"
+                    >History</a
+                  >
+                </li>
+                <li class="nav-element">
+                  <img src="assets/icons/alarm.svg" alt="" /><a href="#"
+                    >Watch later</a
+                  >
+                </li>
+                <li class="nav-element">
+                  <img src="assets/icons/star.svg" alt="" /><a href="#"
+                    >Favourites</a
+                  >
+                </li>
+                <li class="nav-element">
+                  <img src="assets/icons/heart.svg" alt="" /><a href="#"
+                    >Liked videos</a
+                  >
+                </li>
+                <li class="nav-element">
+                  <img src="assets/icons/music.svg" alt="" /><a href="#"
+                    >Music</a
+                  >
+                </li>
+                <li class="nav-element">
+                  <img src="assets/icons/game.svg" alt="" /><a href="#"
+                    >Games</a
+                  >
+                </li>
+              </ul>
+              <button class="dropdown-button">
+                <img src="assets/chevron-down.svg" />
+                <div>Show more</div>
+              </button>
+            </nav>
+          </section>
+          <section class="subscriptions-section">
+            <h2>Subscriptions</h2>
+            <ul class="subscriptions-list">
+              <li class="subscriptions-element">
+                <img
+                  src="./assets/subscriptions/Oval (1).png"
+                  alt="account picture"
+                /><a href="#">Gussie Singleton</a>
+              </li>
+              <li class="subscriptions-element">
+                <img
+                  src="./assets/subscriptions/Oval (2).png"
+                  alt="account picture"
+                /><a href="#">Nora Francis</a>
+              </li>
+              <li class="subscriptions-element">
+                <img
+                  src="./assets/subscriptions/Oval (3).png"
+                  alt="account picture"
+                /><a href="#">Belle Briggs</a>
+              </li>
+              <li class="subscriptions-element">
+                <img
+                  src="./assets/subscriptions/Oval (4).png"
+                  alt="account picture"
+                /><a href="#">Eunice Cortez</a>
+              </li>
+              <li class="subscriptions-element">
+                <img
+                  src="./assets/subscriptions/Oval (5).png"
+                  alt="account picture"
+                /><a href="#">Emma Hanson</a>
+              </li>
+              <li class="subscriptions-element">
+                <img
+                  src="./assets/subscriptions/Oval (6).png"
+                  alt="account picture"
+                /><a href="#">Leah Berry</a>
+              </li>
+            </ul>
+          </section>
+          <button class="setting subscriptions-element">
+            <img src="assets/icons/settings (2).svg" />
+            <div>Setting</div>
+          </button>
+        </aside>
+        <main class="channel-main">
+          <section class="channel-cover">
+            <img
+              src="assets/Cover.png"
+              class="desktop-cover-img"
+              alt="Channel cover"
+            />
+            <img
+              src="assets/Cover (3).png"
+              class="mobile-cover-img"
+              alt="Channel cover"
+            />
+          </section>
+          <header class="channel-header-row">
+            <div class="channel-profile">
+              <img
+                class="channel-avatar"
+                src="/assets/channel-pic.png"
+                alt="Avatar"
+              />
+              <div class="channel-info">
+                <h1 class="channel-name">Margaret Phelps</h1>
+                <div class="channel-subs">245K subscribed</div>
+              </div>
+            </div>
+            <button class="channel-subscribe-btn channel-subscribe-btn-channel">
+              <img
+                class="notification-black"
+                src="assets/icons/black_bell.svg"
+                alt="#"
+              />
+              <div>Subscribe 2.3m</div>
+            </button>
+          </header>
+          <div class="channel-content-row">
+            <div class="channel-content-main">
+              <nav class="channel-tabs" aria-label="Channel navigation">
+                <ul>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Playlists</a></li>
+                  <li><a href="#">Channels</a></li>
+                  <li><a href="#">Discussion</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+                <button class="channel-search-btn" aria-label="Search">
+                  <img src="assets/icons/search (1).svg" alt="Search" />
+                </button>
+              </nav>
+              <article class="featured-video">
+                <div class="thumb-wrapper">
+                  <img
+                    class="featured-thumb"
+                    src="/assets/videos/channel-main-vid.png"
+                    alt="Featured"
+                  />
+                  <div class="featured-time">7:36</div>
+                </div>
+                <div class="featured-info">
+                  <h2 class="featured-title">
+                    Choosing The Best Audio Player <br />
+                    Software For Your Computer
+                  </h2>
+                  <p class="featured-desc">
+                    Your cheap internet-based banner advertising will become one
+                    of the sought for ads there are. Today, the world of
+                    Internet advertising is rapidly evolving beyond banner ads
+                    and intrusive pop-ups. Bayles A common medium for
+                    advertising on the Internet is the use of banner ads.
+                  </p>
+                  <div class="featured-meta">11k views • 6 months ago</div>
+                </div>
+              </article>
+            </div>
+            <aside class="channel-recommend">
+              <h2 class="recommend-title">Recommended channel</h2>
+              <ul class="recommend-list">
+                <li class="recommend-item">
+                  <img src="/assets/recom-channel-1.png" alt="Flora Benson" />
+                  <span class="recommend-name">Flora Benson</span>
+                </li>
+                <li class="recommend-item">
+                  <img src="/assets/recom-channel-2.png" alt="Violet Cobb" />
+                  <span class="recommend-name">Violet Cobb</span>
+                </li>
+                <li class="recommend-item">
+                  <img
+                    src="/assets/recom-channel-3.png"
+                    alt="Phillip Mullins"
+                  />
+                  <span class="recommend-name">Phillip Mullins</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <section class="channel-main-content">
+            <div class="channel-videos-info">
+              <h2 class="channel-section-title channel-page-cst">
+                Margaret Phelps videos
+              </h2>
+              <div class="videos-controls channel-video-controls">
+                <img src="assets/Left.svg" alt="#" />
+                <img src="assets/Right.svg" alt="#" />
+              </div>
+            </div>
+            <ul class="channel-videos rec-channel-videos channel-page-rcv">
+              <li class="channel-video-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./assets/videos/channel-vid-1.png"
+                    alt="Astronomy Or Astrology"
+                  />
+                  <div class="video-time">7:36</div>
+                </div>
+                <div class="video-info">
+                  <div class="video-title">Astronomy Or Astrology</div>
+                  <div class="video-meta">
+                    <div>40k views ·</div>
+                    <div>4 months ago</div>
+                    <div class="video-meta-edge">Food & Drink</div>
+                  </div>
+                </div>
+              </li>
+              <li class="channel-video-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./assets/videos/channel-vid-2.png"
+                    alt="Advertising Outdoors"
+                  />
+                  <div class="video-time">2:19</div>
+                </div>
+                <div class="video-info">
+                  <div class="video-title">Advertising Outdoors</div>
+                  <div class="video-meta">
+                    <div>13k views ·</div>
+                    <div>15 days ago</div>
+                    <div class="video-meta-edge">Food & Drink</div>
+                  </div>
+                </div>
+              </li>
+              <li class="channel-video-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./assets/videos/channel-vid-3.png"
+                    alt="Radio Astronomy"
+                  />
+                  <div class="video-time">9:05</div>
+                </div>
+                <div class="video-info">
+                  <div class="video-title">Radio Astronomy</div>
+                  <div class="video-meta">
+                    <div>1k views ·</div>
+                    <div>11 months ago</div>
+                    <div class="video-meta-edge">Food & Drink</div>
+                  </div>
+                </div>
+              </li>
+              <li class="channel-video-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./assets/videos/Cover (2).png"
+                    alt="A Good Autosorponder"
+                  />
+                  <div class="video-time">3:40</div>
+                </div>
+                <div class="video-info">
+                  <div class="video-title">A Good Autosorponder</div>
+                  <div class="video-meta">
+                    <div>45k views ·</div>
+                    <div>2 months ago</div>
+                    <div class="video-meta-edge">Food & Drink</div>
+                  </div>
+                </div>
+              </li>
+              <li class="channel-video-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./assets/videos/channel-vid-5.png"
+                    alt="Baby Monitor Technology"
+                  />
+                  <div class="video-time">1:56</div>
+                </div>
+                <div class="video-info">
+                  <div class="video-title">Baby Monitor Technology</div>
+                  <div class="video-meta">
+                    <div>86k views ·</div>
+                    <div>7 days ago</div>
+                    <div class="video-meta-edge">Food & Drink</div>
+                  </div>
+                </div>
+              </li>
+              <li class="channel-video-card">
+                <div class="img-wrapper">
+                  <img
+                    src="./assets/videos/channel-vid-6.png"
+                    alt="Asteroids"
+                  />
+                  <div class="video-time">4:15</div>
+                </div>
+                <div class="video-info">
+                  <div class="video-title">Asteroids</div>
+                  <div class="video-meta">
+                    <div>123k views ·</div>
+                    <div>4 months</div>
+                    <div class="video-meta-edge">Dollie Blair</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <nav class="mobile-nav">
+            <a href="#" class="mobile-nav-item mobile-nav-chn">
+              <img src="assets/icons/Combined-Shape (1).svg" alt="Home" />
+              <span>Home</span>
+            </a>
+            <a href="#" class="mobile-nav-item">
+              <img src="assets/icons/fire.svg" alt="Trending" />
+              <span>Trending</span>
+            </a>
+            <a href="#" class="mobile-nav-item">
+              <img src="assets/icons/tabs.svg" alt="Subscriptions" />
+              <span>Subscriptions</span>
+            </a>
+            <a href="#" class="mobile-nav-item">
+              <img src="assets/icons/folder.svg" alt="Library" />
+              <span>Library</span>
+            </a>
+          </nav>
+        </main>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,60 +1,69 @@
-.channel-videos-info{
-    align-items: center;
+.channel-videos-info {
+  align-items: center;
 }
-.category-image{
-    border-radius: 50%;
+.category-image {
+  border-radius: 50%;
 }
-.category-hint{
-    color: #C2C2C2;
+.category-hint {
+  color: #c2c2c2;
+  margin-top: 6px;
 }
-.channel-subscribe-btn{
-    margin-left: auto;
+.channel-subscribe-btn {
+  margin-left: auto;
 }
-.channel-section-title{
-    margin-bottom: 0;
+.channel-section-title {
+  margin-bottom: 0;
 }
-.recommended-channel-category{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.recommended-channel-category {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
 }
-.channel-author{
-    margin-right: auto;
-}
-
-.recommended-video-card{
-    max-width: 550px;
-    min-width: 400px;
-    width: 34%;
-}
-.recommended-video-card img{
-    width: 100%;
-    height: auto;
-    max-height: 250px;
-}
-.recommended-video-time{
-    top: 65%;
-}
-.channel-title-meta{
-    margin-left: auto;
-}
-.video-info{
-    width: 100%;
-}
-.video-meta{
-    white-space: nowrap;
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
+.channel-author {
+  margin-right: auto;
 }
 
-@media (max-width:900px){
-    .feed-channel,.recommended-videos,.channel-videos-info{
-        display: none;
-    }
+.recommended-video-card {
+  max-width: 550px;
+  min-width: 400px;
+  width: 34%;
 }
-@media (max-width:520px){
-    .video-time{
-        top: 65%;
-    }
+.recommended-video-card img {
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+}
+.recommended-video-time {
+  right: 15px;
+  bottom: 14px;
+}
+.channel-title-meta {
+  margin-left: auto;
+}
+.video-info {
+  width: 100%;
+}
+.video-meta {
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .category-margin,
+  .recommended-videos,
+  .channel-videos-info {
+    display: none;
+  }
+}
+.mobile-logo-img {
+  max-width: 116px;
+}
+
+@media (max-width: 340px) {
+  .profile-pic {
+    margin: -2px 0 0 0px;
+    width: 30px;
+  }
 }
