@@ -6,7 +6,7 @@
 }
 .category-hint {
   color: #c2c2c2;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 .channel-subscribe-btn {
   margin-left: auto;
@@ -17,7 +17,7 @@
 .recommended-channel-category {
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 29.6px;
 }
 .channel-author {
   margin-right: auto;
@@ -35,7 +35,7 @@
   max-height: 250px;
 }
 .recommended-video-time {
-  right: 15px;
+  right: 14px;
   bottom: 14px;
 }
 .channel-title-meta {
@@ -50,6 +50,14 @@
   display: flex;
   gap: 10px;
 }
+.recommended-videos {
+  margin: 18px 0 0 0;
+  gap: 30.5px;
+}
+.recommended-videos .video-meta-edge {
+  margin-right: -3px;
+}
+
 @media (max-width: 900px) {
   .category-margin,
   .recommended-videos,
@@ -65,5 +73,11 @@
   .profile-pic {
     margin: -2px 0 0 0px;
     width: 30px;
+  }
+  .channel-videos-mobile {
+    margin: 1px 0 0 0;
+  }
+  .channel-videos-mobile .channel-video-card:nth-child(1) .video-title {
+    margin: 4px 0 4px 0 !important;
   }
 }

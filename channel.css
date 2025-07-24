@@ -40,10 +40,11 @@ h2 {
   justify-content: space-between;
 }
 .notification-black {
-  top: 7px;
-  left: -43px;
+  top: 9px;
+  left: -41px;
   position: absolute;
 }
+
 .header-actions button {
   padding-top: 4px;
 }
@@ -172,7 +173,6 @@ h2 {
 
 main {
   width: 100%;
-  gap: 20px;
   flex: 1;
   margin: 0 66px;
   display: flex;
@@ -217,28 +217,30 @@ main {
   font-weight: 700;
 }
 .channel-subs {
-  color: #ffffff5e;
+  color: rgba(194, 194, 194, 1);
   font-size: 13px;
   font-weight: 400;
 }
 .channel-subscribe-btn {
+  font-family: "Mulish", sans-serif;
   position: relative;
   background: #ff0000;
   color: #fff;
   border-radius: 20px;
   font-size: 16px;
   font-weight: 400;
-  padding: 10.8px 21.4px;
+  padding: 9.8px 20.4px;
   border: none;
   cursor: pointer;
   transition: background 0.2s;
-  margin: 20px 90px 0 auto;
+  margin: 22px 89px 0 auto;
 }
 .channel-subscribe-btn-channel {
-  margin: -38px 4px 0 auto;
+  margin: -40px 4px 0 auto;
 }
 .category-margin {
-  margin-top: -5px;
+  gap: 29.5px !important;
+  margin: 13px 0 0 0;
 }
 .channel-subscribe-btn:hover {
   background: #d90000;
@@ -253,7 +255,7 @@ main {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 26px;
 }
 .channel-tabs {
   display: flex;
@@ -323,15 +325,16 @@ main {
   height: auto;
 }
 .featured-info {
-  padding: 17px 164px 24px 32px;
+  padding: 18px 164px 24px 32px;
   display: flex;
   flex-direction: column;
 }
 .featured-title {
+  line-height: 34px;
   color: #fff;
   font-size: 26px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 }
 .featured-desc {
   line-height: 22px;
@@ -372,19 +375,19 @@ main {
 .videos-controls {
   position: absolute;
   display: flex;
-  gap: 10px;
+  gap: 9px;
   top: 24px;
-  right: -15px;
+  right: -16px;
 }
 .channel-video-controls {
   top: 5px;
-  right: -17px;
+  right: -16px;
 }
 .recommended-controls {
   top: 5px;
 }
 .rec-channels-controls {
-  margin: 0 0 0 0;
+  top: 28px;
 }
 .channel-videos-info {
   margin-right: 100px;
@@ -404,11 +407,17 @@ main {
   gap: 40px;
   align-items: center;
 }
+.category-margin li.channel-video-card:first-of-type .video-meta-edge {
+  margin-left: -5px !important;
+}
 .rec-channel-videos {
   margin-top: -5px;
 }
 .channel-page-rcv {
-  margin: 30px 0 0 0;
+  margin: 30.7px 0 0 0;
+}
+.channel-page-rcv .video-title {
+  margin: 5.5px 0 5px 0px;
 }
 .recommended-channel-videos {
   gap: 36.5px;
@@ -418,7 +427,6 @@ main {
   border-radius: 16px;
   width: 250px;
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -427,13 +435,13 @@ main {
 .channel-video-card img {
   object-position: left;
   width: 100%;
-  border-radius: 14px;
+  border-radius: 12px;
   height: 150px;
   object-fit: contain;
 }
 .video-time {
   border-radius: 12px !important;
-  bottom: 13px;
+  bottom: 14px;
   position: absolute;
   right: 10px;
   background: rgba(0, 0, 0, 0.301);
@@ -450,7 +458,7 @@ main {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
-  margin: 7.5px 0 4px 0px;
+  margin: 6px 0 5px 0px;
 }
 .video-meta {
   font-weight: 400;
@@ -466,7 +474,7 @@ main {
   gap: 10px;
 }
 .channel-recommend {
-  margin: 11px 15px 0 0;
+  margin: 10px 15px 0 0;
   width: 260px;
   min-width: 200px;
 }
@@ -494,7 +502,7 @@ main {
 .recommend-name {
   color: #fff;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /*Mobile Styles*/
@@ -567,7 +575,7 @@ main {
     flex-direction: column;
   }
   .video-title {
-    margin: 5.5px 0 4px 0px;
+    margin: 6px 0 4px 0px;
   }
   .channel-video-card {
     width: 90%;
@@ -620,7 +628,7 @@ main {
   }
   .channel-tabs li {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
   }
   .channel-tabs li:nth-child(1) {
     position: relative;
@@ -645,7 +653,7 @@ main {
     margin: 4px 0 0 0 !important;
     width: 120px;
     text-align: center;
-    padding: 10.2px 0px;
+    padding: 9.2px 0px;
     font-size: 12px;
     font-weight: 400;
   }
@@ -669,13 +677,17 @@ main {
     position: relative;
     margin-bottom: 11px;
   }
+
   .channel-main-content,
   .channel-page-rcv {
-    margin: 0;
+    margin: 0.5px 0 0 0;
+  }
+  .channel-page-rcv .video-title {
+    margin: 3.5px 0 5px 0px;
   }
 
   .channel-tabs ul {
-    gap: 40px;
+    gap: 41px;
     width: 100%;
     padding-right: 30px;
     overflow-x: auto;
@@ -692,14 +704,13 @@ main {
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url("assets/chevron-down.svg");
+    background-image: url("assets/rightArrow.png");
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    right: 16px;
-    top: 50%;
+    right: 29px;
+    top: 52%;
     transform: translateY(-50%);
-    filter: invert(1);
   }
 
   .channel-tabs li:nth-child(n + 4) {
